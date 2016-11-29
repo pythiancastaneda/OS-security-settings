@@ -34,7 +34,15 @@ pam { "Set cracklib limits in password-auth":
   service   => 'system-auth',
   type      => 'password',
   module    => 'pam_cracklib.so',
-  arguments => ['try_first_pass','retry=3', 'minlen=10','ucredit=1','lcredit=1','dcredit=1','ocredit=1'],
+  arguments => ['try_first_pass','retry=3', 'minlen=10','ucredit=-1','lcredit=-1','dcredit=-1','ocredit=-1'],
+}
+
+pam { "Set password remember limit in password-auth":
+  ensure    => present,
+  service   => 'system-auth',
+  type      => 'password',
+  module    => 'pam_unix.so',
+  arguments => ['md5','shadow', 'nullok','try_first_pass','use_authtok','remember=4'],
 }
 
 pam { "Set invalid login 3 times deny in password-auth -fail":
@@ -46,5 +54,13 @@ pam { "Set invalid login 3 times deny in password-auth -fail":
   module           => 'pam_faillock.so',
   arguments        => ['authfail','deny=3','unlock_time=604800','fail_interval=900'],
 }
+
+file { '/etc/security/opasswd':
+  ensure => file,
+  owner  => 'root',
+  group  => 'root',
+  mode   => '0600',
+}
+
 
 
