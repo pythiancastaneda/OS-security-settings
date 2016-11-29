@@ -1,0 +1,15 @@
+#
+# HEADER: This file is managed by Puppet
+# HEADER: Do not make modifications directly!
+#
+###############################################################################
+#
+# /etc/login.defs - Configuration control definitions for the login package.
+#
+<%- options = scope.lookupvar('login_defs::merged_options') -%>
+<%- options.keys.sort_by { |sk| (sk.to_s.upcase) }.each do |k| -%>
+<%- v = options[k] -%>
+<%- if v != :undef and v != '' -%>
+<%= k %> <%= v %>
+<%- end -%>
+<%- end -%>

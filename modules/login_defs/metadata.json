@@ -1,0 +1,61 @@
+{
+  "name": "joshbeard-login_defs",
+  "version": "0.2.0",
+  "author": "Josh Beard",
+  "summary": "Manages /etc/login.defs",
+  "license": "Apache-2.0",
+  "source": "https://github.com/joshbeard/puppet-login_defs.git",
+  "project_page": "https://github.com/joshbeard/puppet-login_defs",
+  "issues_url": "https://github.com/joshbeard/puppet-login_defs/issues",
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">= 2.4.0 < 5.0.0"}
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Scientific",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "10.04",
+        "12.04",
+        "14.04"
+      ]
+    }
+  ]
+}

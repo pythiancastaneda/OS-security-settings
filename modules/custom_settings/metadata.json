@@ -1,0 +1,14 @@
+{
+  "name": "custom_settings",
+  "version": "0.1.0",
+  "author": "etouches",
+  "summary": "Module to set security setting on etouches servers",
+  "license": "Apache 2.0",
+  "source": "",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+

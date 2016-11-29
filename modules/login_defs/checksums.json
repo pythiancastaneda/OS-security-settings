@@ -1,0 +1,12 @@
+{
+  "Gemfile": "b3b14e6f367bf40cf189b2e0f061c25b",
+  "Rakefile": "c71b81811cd8762d8012a848e46b6944",
+  "Readme.md": "c660fc8b00c1c6e12c895c52dd6957ea",
+  "manifests/init.pp": "fbb033f46c278acdeb24f47a70f386c7",
+  "manifests/params.pp": "93c773bc249375d5cd784f03a0079443",
+  "metadata.json": "58f206dd126b2f603777e4ee3c6bb529",
+  "spec/classes/init_spec.rb": "b5a41bb5a6d839bf8b9d7831cf7be897",
+  "spec/fixtures/modules/myorg/templates/login.defs.erb": "33cc29f0ba5b32113c822985b972fbfe",
+  "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+  "templates/login.defs.erb": "2ed70ccd1b2fb326ab10ab8979824f45"
+}
