@@ -1,9 +1,6 @@
 [submodule "modules/login_defs"]
 	path = modules/login_defs
 	url = git@github.com:joshbeard/puppet-login_defs.git
-[submodule "modules/augeasproviders_core"]
-	path = modules/augeasproviders_core
-	url = https://github.com:hercules-team/augeasproviders_core.git
 [submodule "modules/augeasproviders_pam"]
 	path = modules/augeasproviders_pam
 	url = https://github.com/hercules-team/augeasproviders_pam.git
@@ -16,3 +13,6 @@
 [submodule "modules/concat"]
 	path = modules/concat
 	url = git@github.com:puppetlabs/puppetlabs-concat.git
+[submodule "modules/augeasproviders_core"]
+	path = modules/augeasproviders_core
+	url = https://github.com/hercules-team/augeasproviders_core.git
