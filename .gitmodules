@@ -1,6 +1,6 @@
 [submodule "modules/login_defs"]
 	path = modules/login_defs
-	url = git@github.com:joshbeard/puppet-login_defs.git
+	url = https://github.com/joshbeard/puppet-login_defs.git
 [submodule "modules/augeasproviders_pam"]
 	path = modules/augeasproviders_pam
 	url = https://github.com/hercules-team/augeasproviders_pam.git
