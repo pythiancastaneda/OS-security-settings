@@ -55,16 +55,6 @@ pam { "Set password remember limit in password-auth":
   arguments => ['md5','shadow', 'nullok','try_first_pass','use_authtok','remember=4'],
 }
 
-pam { "Set invalid login 3 times deny in password-auth -fail":
-  ensure           => present,
-  service          => 'password-auth',
-  type             => 'auth',
-  control          => '[default=die]',
-  control_is_param => true,
-  module           => 'pam_faillock.so',
-  arguments        => ['authfail','deny=3','unlock_time=604800','fail_interval=900'],
-}
-
 file { '/etc/security/opasswd':
   ensure => file,
   owner  => 'root',
